@@ -1,0 +1,289 @@
+SQL
+DBMS
+DATAMART
+DATAWAREHOUSE
+
+
+Group of datamarts=datalake=datawarehouse
+                                                                
+EDL=          extraction,transformation,loading
+ELT =   it is the process which can directly load the data
+
+
+Types of databases and models:
+NO sql
+sql
+
+
+
+database?
+
+organized collection of interrelated data stored in a server/computer.
+
+ACID Properties:
+===============
+ATOMICITY
+CONSISTENCY
+ISOLATION
+DURA
+
+imp of DB
+============
+
+FOr handling large amount of diff types of data with ease.
+systamatically we cam retreive ,filter and sort and update data efficiently and accurately.
+
+
+types of DB Model:
+==================
+flat model and flat file
+
+
+DBs
+===========
+Hierarrchical           db and model
+network model      db and model
+relational model   db and model
+Dimensional model it is model not db
+object oriented       db and model
+
+
+RELATIONSHIPS:
+================
+ONE TO ONE
+ONE TO MANY
+MANY TO ONE
+MANY TO MANY
+
+Hierarchical DB's:
+=================
+
+
+Network DB's:
+==============
+Hierarchical model+many to many relationship
+it is officially stated by CODASYL(Conference on data systems language)
+
+Relational DBs
+==============
+MYSql
+DB2(IBM)
+Postgre
+Oracle
+H2
+HSQL etc...
+
+
+object Oriented DBs
+===================
+
+OOD follows all the pronciples of OOPS like class,objects,inheritance,polymorphism,encapsulation and abstraction.
+
+main advantages of oops is reusability
+
+
+What is DBMS?
+===============
+an application software to create,delete,update and administer data
+for manipulting the data
+
+
+Components of DBMS
+====================
+hardware=>Disk and RAM ,Keyboard,monitor etc..
+software=> MySQL or Oracle
+data=> information collected
+procedure=>rules that help in using DBMS
+DB Access Language=> Query Language to perform operations like create,read,update and delete
+
+
+characters of DBMS
+==================
+DBMS supports ACID Properties
+it stores any kind of data like images,videos,files etc,
+BackUp and Recovery
+Duplicate data can be reduced
+sharing of data is easy
+supports data security and restriction to unauthorized access
+
+Application of DBMS
+===================
+Banking System
+telecom
+airlines
+online shopping
+education etc,..
+
+Advantages of DBMS
+===================
+DBMS Duplicate data(data redundancy) is very less or not present
+In DBMS data stored in consistent(inconsistency is removed)
+we can share data among diff applications and users
+we can search and fetch data from different servers
+we can limit the access to the data by defining privileges or permissions
+DBMS uses software locking mechanism that prevents the same set of data from being changed by 2 people at the same time
+DBMS can integrate the data from diff locations
+DBMS supports in quality business decisions
+DBMS provide set or commands to reduce the time for acess of data by writing simple queries using this commands
+DBMS restores the data to previous state in case of any crash
+DBMS support tuning techniques to improve the performance
+Data loss is almost eliminated
+Any transaction to DBMS will be treated atomic transaction
+
+Disadvantages
+==============
+Cost of hardware and software
+technical staff
+managing the complexity of DB
+Frequent upgrade or management of data
+
+Types of DBMS
+==============
+No SQL
+ER Model
+SQL
+Document
+Network
+Graph database
+Hierarchical DB
+
+
+
+Normalization in DBMS
+=====================
+set of rules to prevent data redundancy
+
+It is defined as process to remove to remove/redundant data among diff tables to ensure data integrity
+which supplies the CRUD(Create,Read,update and delete)
+it removes anamolies like
+   insert anamoly
+   update anamoly
+   delete anamoly
+
+SQL
+====
+SET of commands to manipulate the database
+these set of commands are divided 4 parts
+
+1.DDL=> create or remove and change the table in databas
+==========
+create
+alterr
+drop
+truncate
+
+2.DML=>create or remove or change values in the table
+insert
+update
+delete
+
+3.DCL=> to set the privilleges for accessing db
+grant
+revoke
+4.TCL=> to commit or roll back the database transactions(create,read,update and delete) od the data in table
+==========
+commit
+rollback
+savepoint
+
+
+5.DQL=>to retreive the data using select statement
+==========
+select 
+
+
+Datatypes in MySQL
+==================
+
+Numeric: int,tiyint,smallint,mediumint,bigint,float(m,d),double(m,d),decimal(m,d),bit(m),bool,boolen
+
+String Datatypes
+===============
+char(size),varchar(size),Tinytext,text,mediumtext,longtext,binary,varbinary,enum,et
+
+BOOB(binary Larhe Object Data Types)
+===================================
+Tinybolb=255bytes
+blob=65,635 bytes
+mediumnlob=16,777,216 bytes
+longblob=4gb
+
+Date Data Type
+==============
+Year[(2|4)]=> 2 digit or 4 digit=> by default 4 digits are stored
+DATE=>'yyyy-mm-dd'=>1000-01-01 to 9999-12-31
+TIME=>'HH-MM:SS'
+DATETIME=>'yyyy-mm-dd HH:MM:SS'
+TIMESTAMP=>'YYYY-MM-DD HH:MM:SS'
+
+constrains:
+===========
+2 types  column level,table level constrains
+
+rule on data
+
+to specify or restrict data values to store in the table
+
+Constrains are defined on table to ensure data accuracy and integrity
+
+Example
+========
+
+studentage cannot be=>120=>column level constraint
+
+2 types  constrains
+================
+column level=> that limits to a particular column to insert particular data
+table level =>that are applied on entire table that limits the data insertion on whole table
+
+
+List of Constrains
+================
+NOTNULL
+CHECK
+DEFAULT
+PRIMARYKEY
+AUTO INCREMENT
+ENUM
+FORIEGN KEY
+INDEX
+UNIQUE
+
+
+MYSQL Engines
+==============
+
+MyISAM
+INNODB
+MERGE
+ARCHIVE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
