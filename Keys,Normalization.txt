@@ -1,0 +1,101 @@
+
+Normalization in DBMS
+=====================
+set of rules to prevent data redundancy
+
+It is defined as process to remove to remove/redundant data among diff tables to ensure data integrity
+which supplies the CRUD(Create,Read,update and delete)
+it removes anamolies like
+   insert anamoly
+   update anamoly
+   delete anamoly
+
+
+keys in DBMS
+=============
+
+A key is an attribute or set of attributes that help to uniquely identify a row/tuple in a relation/table.
+
+keys are used to establish relationship/association between tables
+
+Why keys are required?
+========================
+for in defining various integrity constrains
+
+
+types of keys
+===========
+1ary key  table level constraint
+candidate 
+super
+foriegn   table level
+composite
+alternate
+unique
+
+1.Primarykey:  
+=============
+
+1 table have only 1 primary key
+Primary key values cannot be not null
+Primary key values must be unique
+
+Primary key= not null+value(unique)
+
+
+
+2 types of constrains:
+====================
+column level
+table level
+                                       Primarykey syntax
+                                        ====================
+
+create table employee(empid varchar(10),empname varchar(50),empdob date,empemail varchar(30),primary key(empid));
+
+
+alter table employee add primarykey(empid)
+
+        Adding primary key with name
+=================================
+
+create table project(projectid varchar(18),projectname varchar(30),constraint project_pk primary key(projectid));
+
+
+Drop the primary key
+===================
+alter table project drop primary key;
+
+
+alter table project drop constraint project_pk;
+
+2.Candidate key
+=============
+group of keys
+
+priary key is a candidate key
+Candidate key are those Attributes that uniquely identify rows of the table
+more than on attribue can be candidate keys
+candidate keys is super key with no repeated attributes
+example:
+========
+employeeid,employeeemail,employeemobileno etc,,
+
+3.Superkey
+============
+set of keys thar are uniquely identify other columns of that table
+The primary key is picked from superkey
+A superkey can
+
+
+
+4. Foreign key
+=============
+Foreign keys are the column of the table which is used to point to the primary key of another table
+
+
+
+
+
+
+
